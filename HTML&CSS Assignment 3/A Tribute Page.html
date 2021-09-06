@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <title>A4 Page Using CSS</title>
+    <style>
+     body {
+       width: 230mm;
+       height: 100%;
+       margin: 0 auto;
+       padding: 0;
+       font-size: 12pt;
+       
+     }
+     * {
+       box-sizing: border-box;
+       -moz-box-sizing: border-box;
+     }
+     .main-page {
+       width: 210mm;
+       min-height: 297mm;
+       margin: 10mm auto;
+       background: white;
+       box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+     }
+     .sub-page {
+       padding: 1cm;
+       height: 297mm;
+       background: lightblue; 
+     }
+     @page {
+       size: A4;
+       margin: 0;
+     }
+     @media print {
+       html, body {
+      width: 210mm;
+      height: 297mm;        
+       }
+       .main-page {
+      margin: 0;
+      border: initial;
+      border-radius: initial;
+      width: initial;
+      min-height: initial;
+      box-shadow: initial;
+      background: initial;
+      page-break-after: always;
+       }
+     }
+  </style>
+  </head>
+  <body>
+    <div class="main-page">
+      <div class="sub-page">
+        <h2 align='center' ><u>Sachin Tendulkar</u></h2>
+        <h3 align='center' >Cricketer</h3>
+        <p align='center'><img src="C:/Users/amarm_000/Desktop/sachin.jpg" width="380" height="250"/></p>
+        <h5 align='center'>Internation Career(1989-2013)</h5>
+        <h3><u>Few things about God of Cricket Sachin Ramesh Tendulkar             </u></h3> 
+        <ul>
+           <li>Born on April 24, 1973, Bombay [Mumbai], India</li>
+           <li>Full Name is Sachin Ramesh Tendulkar</li>
+           <li><u><b>Test career</b></u>
+            <ul>
+             <li>First Test - 15 November 1989 v Pakistan</li>
+              <li>Last Test - 14 November 2013 v West Indies</li>
+           </ul>
+           </li>
+           <li><u><b>ODI career</b></u>
+            <ul>
+             <li>First ODI - 18 December 1989 v Pakistan</li>
+              <li>Last ODI - 18 March 2012 v Pakistan</li>
+           </ul>
+           </li>
+           <li><u><b>T20 career</b></u>
+            <ul>
+             <li>First T20 - 1 December 2006 v South Africa</li>
+           </ul>
+           </li>
+           <li>He is widely regarded as the greatest batsmen in the history of cricket</li>
+           <li>The highest run scorer of all time in international cricket, and the only player to have scored one hundred international centuries, the first batsman to score a double century in a One Day International (ODI)</li>
+           <li>The holder of the record for the most runs in both Test and ODI cricket, and the only player to complete more than 30,000 runs in international cricket</li>
+           <li>He is affectionately known as <b>"Little Master"</b>or <b>"Master Blaster"</b></li>
+           <li>In 2012, Tendulkar was nominated to the Rajya Sabha, the upper house of the Parliament of India</li>
+           <li>In 2010, Time magazine included Sachin in its annual Time 100 list as one of the "Most Influential People in the World"</li>
+           <li>Tendulkar played 664 international cricket matches in total, scoring 34,357 runs</li>
+           <li>Throughout his long career Tendulkar was consistently ranked among the game’s best batsmen</li>
+           <li>He was often likened to Australia’s Don Bradman in his single-minded dedication to scoring runs and the certainty of his strokeplay off both front and back foot</li>
+        </ul> 
+        <p>  November 16, 2013: Batting legend Sachin Tendulkar, perhaps the world's most adored sporting hero, decided to walk away from the game that had brought him adulation and admiration from millions of fans. Tens of thousands in the Wankhede stadium and hundreds of millions around the nation realized that Sachin Tendulkar had played the final day of his 24-year long illustrious international career.</p> 
+        <h2 align='center'><i>"My life between 22 yards for 24 years"</i></h2>
+
+      </div>    
+    </div>
+  </body>
+</html>

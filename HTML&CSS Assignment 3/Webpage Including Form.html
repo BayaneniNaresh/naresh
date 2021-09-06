@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+     body {
+       width: 230mm;
+       height: 100%;
+       margin: 0 auto;
+       padding: 0;
+       font-size: 12pt;
+       
+     }
+     * {
+       box-sizing: border-box;
+       -moz-box-sizing: border-box;
+     }
+     .main-page {
+       width: 210mm;
+       min-height: 297mm;
+       margin: 10mm auto;
+       background: white;
+       box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+     }
+     .sub-page {
+       padding: 1cm;
+       height: 297mm;
+       background: #C2CAD0; 
+     }
+     @page {
+       size: A4;
+       margin: 0;
+     }
+     @media print {
+       html, body {
+      width: 210mm;
+      height: 297mm;        
+       }
+       .main-page {
+      margin: 0;
+      border: initial;
+      border-radius: initial;
+      width: initial;
+      min-height: initial;
+      box-shadow: initial;
+      background: initial;
+      page-break-after: always;
+       }
+     }
+     input,textarea{
+     	background-color:#ADAD;
+     }
+ 	     
+     b{
+     	color:blue;
+     }
+     #textboxid
+	{
+    	height:30px;
+    	font-size:15pt;
+	}
+  </style>
+</head>
+<body>
+	<h1 align="center" style="color:#1F2833;">Survay on Agriculture</h1>
+	<h4 align="center" style="color:#1F2833;">(form collets data about types of crops cultivated by farmers and ways of doing)</h4>
+</body>
+<body>
+ 	<div class="main-page">
+      	<div class="sub-page">
+		<form>
+			<b>Farmer Name</b><br><input id="textboxid" type="text" name="farmername" size=60 ><br><br>
+			<b>Village:</b><input id="textboxid" type="text" name="villagename">
+			<b>City:</b><input id="textboxid" type="text" name="Cityname"><br><br>
+			<b>State:</b><input id="textboxid" type="text" name="State">
+			<b>Country:</b><input id="textboxid" type="text" name="Country"><br><br>
+			<b>Pincode:</b><input id="textboxid" type="text" name="pincode"><br><br>
+			<b>Crops:</b><br>
+			<input type="checkbox" id="Groundnut" name="Groundnut" value="Groundnut">
+  			<label for="Groundnut">Groundnut<br>
+  			<input type="checkbox" id="Cotton" name="Cotton" value="Cotton">
+  			<label for="Cotton"> Cotton</label><br>
+  			<input type="checkbox" id="Paddy" name="Paddy" value="Paddy">
+  			<label for="Paddy"> Paddy</label><br><br>
+  			<b>Equipment Used for Farming</b><br>
+  			<input type="radio" id="age1" name="Equipment" value="30">
+  			<label for="age1">Tractor</label><br>
+  			<input type="radio" id="age2" name="Equipment" value="60">
+  			<label for="age2">Animals</label><br>  
+  			<input type="radio" id="age3" name="Equipment" value="100">
+  			<label for="age3">Both</label><br><br>
+  			<b>Write Something about your favourite crop</b>
+      		<textarea name="user_message" rows="4" cols="90" placeholder"Enter Text Here" ></textarea>
+      		<br><br><b>Which type of fertilizers you use?</b><br>
+  			<input type="radio" id="age1" name="age" value="30">
+  			<label for="age1">Natural</label><br>
+  			<input type="radio" id="age2" name="fertilizers" value="fertilizers">
+  			<label for="age2">Artifiacal</label>
+      		<br><br><b>Would you suggest others to fill the form</b><br>
+  			<input type="radio" id="age1" name="fill1" value="fill1">
+  			<label for="age1">Yes</label><br>
+  			<input type="radio" id="age2" name="fill1" value="fill2">
+  			<label for="age2">No</label><br>  
+  			<br><br><b>how many years of experience you have in farming</b><br>
+  			<input type="radio" id="age1" name="fill" value="val">
+  			<label for="age1">0-10</label><br>
+  			<input type="radio" id="age2" name="fill" value="val">
+  			<label for="age2">10-20</label><br>
+  			<input type="radio" id="age2" name="fill" value="val">
+  			<label for="age2">20-30</label><br>
+  			<input type="radio" id="age2" name="fill" value="val">
+  			<label for="age2">40-50</label><br><br>
+  			
+  			<input type="button" value="submit"></p>
+			
+		</form>
+		<br><br><h2 align='center'><b>“It feels good at the end of the day to know you made a product that other people are going to enjoy.”</b></h2>
+	</div>
+	</div
+</body>
+</html>
