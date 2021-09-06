@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script >
+            var obj= { "firstName": "Naresh", "lastName": "chowdary" };
+
+var p1= JSON.parse(JSON.stringify(obj));
+
+document.write(p1.firstName+" "+p1.lastName);
+
+p1.lastName="Naresh";
+
+document.write(p1.firstName+" "+p1.lastName);
+document.write(p1.middleName);
+
+p1.middleName= "Bayaneni";
+
+document.write(p1.middleName);
+        </script>
+    </body>
+</html>

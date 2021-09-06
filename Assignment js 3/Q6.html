@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script >
+            var obj= "var p1={ firstName: 'naresh', lastName: 'bayaneni' };";
+
+eval(obj);
+
+document.write(p1.firstName+" "+p1.lastName);
+
+p1.lastName="naresh";
+
+document.write(p1.firstName+" "+p1.lastName);
+
+document.write(p1.middleName);
+
+p1.middleName= "bayaneni";
+
+document.write(p1.middleName);
+        </script>
+    </body>
+</html>
