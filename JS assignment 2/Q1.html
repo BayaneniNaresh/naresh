@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>hello</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+    function Square(val)
+    {
+        return val*val;
+    }
+    function double(val){
+        return val*2;
+    }
+    composevalue=(f1,f2,val)=>f1(f2(val));
+    document.write(composevalue(Square,double,5));
+</script>
+</html>

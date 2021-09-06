@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Composite functions</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function Square(val)
+        {
+            return val*val;
+        }
+        function double(val){
+            return val*2;
+        }
+        composevalue=(square,double)=>val=>square(double(val));
+        var f1=composevalue(Square,double);
+        var f2=composevalue(double,Square);
+        document.write("First square and then double<br>");
+        document.write("<br>"+"5-> "+f1(5));
+        document.write("<br>"+"10-> "+f1(10));
+        document.write("<br>First double and then square<br>");
+        document.write("5-> "+f2(5));
+
+        document.write("<br>"+"10-> "+f2(10));
+
+
+ </script>
+</body>
+</html>
