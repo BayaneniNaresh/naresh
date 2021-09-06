@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr = [4, 3, 11, 7, 5, 2, 5, 9];
+        document.write(arr)
+const min = arr.reduce((a, b) => Math.min(a, b))
+document.write("<br>")
+document.write("The smallest number in the array is "+min)
+const max = arr.reduce((a, b) => Math.max(a, b))
+document.write("<br>")
+document.write("The largest number in the array is "+max)
+document.write("<br>")
+var i=0;
+var even=0,odd=0;
+for(i = 0; i < arr.length; i++) {
+    if(arr[i] % 2 == 0)
+    {         
+      even++;
+    }
+    else
+       odd++;	
+}            
+if(even>odd)
+{
+    document.write("even count is high");
+}     
+else{
+    document.write("odd count is high");
+}
+var sum=0,avg;
+for(i=0;i<arr.length;i++)
+{
+    sum=sum+arr[i];
+}
+avg=sum/arr.length;
+document.write("<br>")
+document.write("Sum of the numbers in the array is "+sum)
+document.write("<br>")
+document.write("Average of the numbers in the array is "+avg)
+
+    </script>
+
+</body>
+</html>
